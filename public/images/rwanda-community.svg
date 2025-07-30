@@ -1,0 +1,242 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22C55E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16A34A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="houseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D97706;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B45309;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Sky Background -->
+  <rect width="100%" height="400" fill="url(#skyGrad)"/>
+  
+  <!-- Hills in background -->
+  <path d="M0,350 Q200,300 400,320 Q600,340 800,310 L800,400 L0,400 Z" fill="url(#hillGrad)" opacity="0.7"/>
+  <path d="M0,380 Q150,360 300,370 Q500,380 800,350 L800,400 L0,400 Z" fill="url(#hillGrad)" opacity="0.8"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="400" width="800" height="200" fill="#15803D"/>
+  
+  <!-- Village Houses -->
+  <!-- House 1 -->
+  <g transform="translate(100, 350)">
+    <rect x="0" y="0" width="60" height="50" fill="url(#houseGrad)" filter="url(#shadow)"/>
+    <polygon points="0,0 30,-20 60,0" fill="#DC2626"/>
+    <rect x="45" y="20" width="12" height="20" fill="#92400E"/>
+    <rect x="8" y="15" width="15" height="15" fill="#1E40AF" opacity="0.8"/>
+    <rect x="8" y="35" width="15" height="10" fill="#1E40AF" opacity="0.8"/>
+  </g>
+  
+  <!-- House 2 -->
+  <g transform="translate(200, 360)">
+    <rect x="0" y="0" width="50" height="40" fill="url(#houseGrad)" filter="url(#shadow)"/>
+    <polygon points="0,0 25,-15 50,0" fill="#DC2626"/>
+    <rect x="38" y="15" width="10" height="18" fill="#92400E"/>
+    <rect x="5" y="12" width="12" height="12" fill="#1E40AF" opacity="0.8"/>
+  </g>
+  
+  <!-- House 3 -->
+  <g transform="translate(300, 355)">
+    <rect x="0" y="0" width="55" height="45" fill="url(#houseGrad)" filter="url(#shadow)"/>
+    <polygon points="0,0 27.5,-18 55,0" fill="#DC2626"/>
+    <rect x="42" y="18" width="11" height="19" fill="#92400E"/>
+    <rect x="7" y="14" width="14" height="14" fill="#1E40AF" opacity="0.8"/>
+  </g>
+  
+  <!-- AirVolt Device installations -->
+  <!-- Device 1 -->
+  <g transform="translate(130, 330)">
+    <rect x="0" y="0" width="12" height="8" rx="2" fill="#10B981"/>
+    <circle cx="6" cy="4" r="1.5" fill="#FDE047">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Device 2 -->
+  <g transform="translate(225, 340)">
+    <rect x="0" y="0" width="12" height="8" rx="2" fill="#10B981"/>
+    <circle cx="6" cy="4" r="1.5" fill="#FDE047">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Device 3 -->
+  <g transform="translate(325, 335)">
+    <rect x="0" y="0" width="12" height="8" rx="2" fill="#10B981"/>
+    <circle cx="6" cy="4" r="1.5" fill="#FDE047">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Trees -->
+  <g transform="translate(50, 380)">
+    <rect x="8" y="15" width="4" height="15" fill="#92400E"/>
+    <circle cx="10" cy="15" r="8" fill="#22C55E"/>
+  </g>
+  
+  <g transform="translate(380, 375)">
+    <rect x="6" y="20" width="3" height="12" fill="#92400E"/>
+    <circle cx="7.5" cy="20" r="6" fill="#22C55E"/>
+  </g>
+  
+  <g transform="translate(500, 370)">
+    <rect x="10" y="25" width="5" height="18" fill="#92400E"/>
+    <circle cx="12.5" cy="25" r="10" fill="#22C55E"/>
+  </g>
+  
+  <!-- People in the community -->
+  <!-- Person 1 -->
+  <g transform="translate(150, 380)">
+    <circle cx="3" cy="5" r="3" fill="#8B4513"/>
+    <rect x="1" y="8" width="4" height="12" fill="#3B82F6"/>
+    <rect x="0" y="20" width="2" height="8" fill="#374151"/>
+    <rect x="4" y="20" width="2" height="8" fill="#374151"/>
+  </g>
+  
+  <!-- Person 2 -->
+  <g transform="translate(250, 385)">
+    <circle cx="3" cy="5" r="3" fill="#8B4513"/>
+    <rect x="1" y="8" width="4" height="12" fill="#EF4444"/>
+    <rect x="0" y="20" width="2" height="8" fill="#374151"/>
+    <rect x="4" y="20" width="2" height="8" fill="#374151"/>
+  </g>
+  
+  <!-- Solar panels comparison (older technology) -->
+  <g transform="translate(600, 320)">
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+      Traditional Solar
+    </text>
+    <rect x="0" y="0" width="40" height="25" fill="#1E40AF" opacity="0.8"/>
+    <g stroke="#E5E7EB" stroke-width="1">
+      <line x1="10" y1="0" x2="10" y2="25"/>
+      <line x1="20" y1="0" x2="20" y2="25"/>
+      <line x1="30" y1="0" x2="30" y2="25"/>
+      <line x1="0" y1="8" x2="40" y2="8"/>
+      <line x1="0" y1="16" x2="40" y2="16"/>
+    </g>
+  </g>
+  
+  <!-- AirVolt advantage -->
+  <g transform="translate(600, 370)">
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+      AirVolt 24/7
+    </text>
+    <rect x="0" y="0" width="30" height="15" rx="3" fill="#10B981"/>
+    <circle cx="8" cy="7.5" r="2" fill="#FDE047">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="15" cy="7.5" r="2" fill="#FDE047">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="22" cy="7.5" r="2" fill="#FDE047">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Power lines connecting community -->
+  <g stroke="#6B7280" stroke-width="2" fill="none">
+    <path d="M142,334 Q170,320 200,330"/>
+    <path d="M237,345 Q260,335 300,340"/>
+    <path d="M337,340 Q370,330 400,335"/>
+  </g>
+  
+  <!-- Power poles -->
+  <g fill="#6B7280">
+    <rect x="168" y="315" width="4" height="20"/>
+    <rect x="258" y="330" width="4" height="15"/>
+    <rect x="368" y="325" width="4" height="18"/>
+  </g>
+  
+  <!-- Children playing with LED lights -->
+  <g transform="translate(180, 420)">
+    <!-- Child 1 -->
+    <circle cx="5" cy="8" r="4" fill="#8B4513"/>
+    <rect x="3" y="12" width="4" height="15" fill="#22C55E"/>
+    <rect x="2" y="27" width="2" height="10" fill="#374151"/>
+    <rect x="6" y="27" width="2" height="10" fill="#374151"/>
+    
+    <!-- Child 2 -->
+    <circle cx="25" cy="8" r="4" fill="#8B4513"/>
+    <rect x="23" y="12" width="4" height="15" fill="#FBBF24"/>
+    <rect x="22" y="27" width="2" height="10" fill="#374151"/>
+    <rect x="26" y="27" width="2" height="10" fill="#374151"/>
+    
+    <!-- LED light they're holding -->
+    <circle cx="15" cy="15" r="3" fill="#FDE047" opacity="0.9">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Impact statistics overlay -->
+  <g transform="translate(500, 450)">
+    <rect x="0" y="0" width="250" height="120" rx="10" fill="#FFF" opacity="0.95" filter="url(#shadow)"/>
+    
+    <text x="15" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
+      Community Impact
+    </text>
+    
+    <g transform="translate(15, 45)">
+      <circle cx="8" cy="8" r="6" fill="#10B981"/>
+      <text x="8" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#FFF">5</text>
+      <text x="25" y="8" font-family="Arial, sans-serif" font-size="12" fill="#374151">
+        Households Powered
+      </text>
+      <text x="25" y="20" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">
+        24/7 clean electricity access
+      </text>
+    </g>
+    
+    <g transform="translate(15, 80)">
+      <circle cx="8" cy="8" r="6" fill="#059669"/>
+      <text x="8" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#FFF">15</text>
+      <text x="25" y="8" font-family="Arial, sans-serif" font-size="12" fill="#374151">
+        Children Studying at Night
+      </text>
+      <text x="25" y="20" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">
+        Extended learning hours
+      </text>
+    </g>
+  </g>
+  
+  <!-- Cloud formation for humidity -->
+  <g opacity="0.8">
+    <ellipse cx="150" cy="80" rx="30" ry="15" fill="#FFF"/>
+    <ellipse cx="170" cy="75" rx="25" ry="12" fill="#FFF"/>
+    <ellipse cx="130" cy="85" rx="20" ry="10" fill="#FFF"/>
+    
+    <ellipse cx="600" cy="100" rx="40" ry="20" fill="#FFF"/>
+    <ellipse cx="630" cy="95" rx="30" ry="15" fill="#FFF"/>
+    <ellipse cx="570" cy="105" rx="25" ry="12" fill="#FFF"/>
+  </g>
+  
+  <!-- Water droplets falling (representing humidity) -->
+  <g opacity="0.6">
+    <circle cx="160" cy="120" r="2" fill="#0EA5E9">
+      <animate attributeName="cy" values="120;130;120" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="125" r="1.5" fill="#0284C7">
+      <animate attributeName="cy" values="125;135;125" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="610" cy="140" r="2.5" fill="#0369A1">
+      <animate attributeName="cy" values="140;150;140" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Text overlay -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#374151">
+    Empowering Rural Rwanda
+  </text>
+  <text x="400" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">
+    Clean Energy for Every Community
+  </text>
+</svg>
