@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impakt Info - World-Class Digital News</title>
+    <meta name="description" content="Immersive storytelling and premium journalism from around the world">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-ticker" id="breakingNewsTicker">
+        <div class="ticker-content">
+            <span class="breaking-label">BREAKING</span>
+            <span class="ticker-text">Global Climate Summit reaches historic agreement • Tech giants announce sustainable AI initiative • Markets surge on economic recovery signs</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <h1>Impakt Info</h1>
+                    <span class="tagline">Premium Journalism</span>
+                </div>
+            </div>
+            
+            <nav class="nav-center">
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">Politics</a></li>
+                    <li><a href="#" class="nav-link">Culture</a></li>
+                    <li><a href="#" class="nav-link">Health</a></li>
+                    <li><a href="#" class="nav-link">Sports</a></li>
+                    <li><a href="#" class="nav-link">Technology</a></li>
+                    <li><a href="#" class="nav-link">World</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="date-display" id="currentDate"></div>
+                <button class="dark-mode-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Featured Story">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-category">WORLD NEWS</span>
+            <h1 class="hero-headline">The Future of Sustainable Cities: How Urban Planning is Reshaping Tomorrow's Metropolises</h1>
+            <p class="hero-excerpt">From vertical gardens to smart infrastructure, cities worldwide are pioneering innovative solutions to combat climate change while enhancing quality of life for millions of residents.</p>
+            <div class="hero-meta">
+                <div class="author-info">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Author" class="author-avatar">
+                    <div>
+                        <span class="author-name">Sarah Chen</span>
+                        <span class="publish-date">2 hours ago</span>
+                    </div>
+                </div>
+                <div class="read-time">8 min read</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Latest News Grid -->
+            <section class="news-grid">
+                <div class="section-header">
+                    <h2 class="section-title">Latest Stories</h2>
+                    <div class="category-filters">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Politics</button>
+                        <button class="filter-btn">Culture</button>
+                        <button class="filter-btn">Health</button>
+                        <button class="filter-btn">Sports</button>
+                    </div>
+                </div>
+                
+                <div class="articles-grid">
+                    <!-- Featured Article Card -->
+                    <article class="article-card featured">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Technology">
+                            <span class="card-category">TECHNOLOGY</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Artificial Intelligence Breakthrough: New Model Achieves Human-Level Reasoning</h3>
+                            <p class="card-excerpt">Scientists at leading research institutions unveil groundbreaking AI system that demonstrates unprecedented problem-solving capabilities...</p>
+                            <div class="card-meta">
+                                <span class="author">Dr. Michael Torres</span>
+                                <span class="time">4 hours ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Regular Article Cards -->
+                    <article class="article-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Health">
+                            <span class="card-category">HEALTH</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Revolutionary Gene Therapy Shows Promise for Treating Alzheimer's</h3>
+                            <p class="card-excerpt">Clinical trials reveal encouraging results for new treatment approach...</p>
+                            <div class="card-meta">
+                                <span class="author">Dr. Elena Rodriguez</span>
+                                <span class="time">6 hours ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1477281765962-ef34e8bb0967?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Culture">
+                            <span class="card-category">CULTURE</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Venice Biennale 2024: Art Meets Climate Action</h3>
+                            <p class="card-excerpt">This year's exhibition showcases powerful works addressing environmental crisis...</p>
+                            <div class="card-meta">
+                                <span class="author">Marco Antonelli</span>
+                                <span class="time">8 hours ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1529258283598-8d6fe60b27f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sports">
+                            <span class="card-category">SPORTS</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Olympic Records Shattered at World Athletics Championships</h3>
+                            <p class="card-excerpt">Athletes push boundaries with stunning performances across multiple events...</p>
+                            <div class="card-meta">
+                                <span class="author">James Morrison</span>
+                                <span class="time">10 hours ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1541873676-a18131494184?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Politics">
+                            <span class="card-category">POLITICS</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Global Summit Addresses International Trade Reforms</h3>
+                            <p class="card-excerpt">World leaders convene to discuss new frameworks for economic cooperation...</p>
+                            <div class="card-meta">
+                                <span class="author">Catherine Williams</span>
+                                <span class="time">12 hours ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Environment">
+                            <span class="card-category">ENVIRONMENT</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Renewable Energy Milestone: Solar Power Reaches New Efficiency Peak</h3>
+                            <p class="card-excerpt">Latest technology breakthrough promises more affordable clean energy...</p>
+                            <div class="card-meta">
+                                <span class="author">David Kim</span>
+                                <span class="time">14 hours ago</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Editor's Picks -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Editor's Picks</h3>
+                    <div class="picks-list">
+                        <article class="pick-item">
+                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Pick 1">
+                            <div class="pick-content">
+                                <h4>The Hidden Impact of Microplastics on Marine Life</h4>
+                                <span class="pick-author">Marine Biology Inst.</span>
+                            </div>
+                        </article>
+                        
+                        <article class="pick-item">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Pick 2">
+                            <div class="pick-content">
+                                <h4>Digital Nomads Reshape Rural Economies</h4>
+                                <span class="pick-author">Economic Research Center</span>
+                            </div>
+                        </article>
+                        
+                        <article class="pick-item">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Pick 3">
+                            <div class="pick-content">
+                                <h4>Space Tourism: The Next Frontier Opens</h4>
+                                <span class="pick-author">Aerospace Weekly</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Quote of the Day -->
+                <div class="sidebar-section quote-section">
+                    <h3 class="sidebar-title">Quote of the Day</h3>
+                    <blockquote class="daily-quote">
+                        <p>"The future belongs to those who believe in the beauty of their dreams."</p>
+                        <cite>— Eleanor Roosevelt</cite>
+                    </blockquote>
+                </div>
+
+                <!-- Trending Tags -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Trending Topics</h3>
+                    <div class="trending-tags">
+                        <span class="tag">#ClimateAction</span>
+                        <span class="tag">#ArtificialIntelligence</span>
+                        <span class="tag">#SustainableCities</span>
+                        <span class="tag">#QuantumComputing</span>
+                        <span class="tag">#GeneTherapy</span>
+                        <span class="tag">#RenewableEnergy</span>
+                    </div>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="sidebar-section newsletter-section">
+                    <h3 class="sidebar-title">Stay Informed</h3>
+                    <p class="newsletter-desc">Get our premium digest delivered to your inbox</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Impakt Info</h3>
+                    <p>Premium journalism for the modern world. Delivering truth through immersive storytelling.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Sections</h4>
+                        <ul>
+                            <li><a href="#">World News</a></li>
+                            <li><a href="#">Politics</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">Culture</a></li>
+                            <li><a href="#">Health</a></li>
+                            <li><a href="#">Sports</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Editorial Standards</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    
+                    <div class="language-toggle">
+                        <button class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            <span>English</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Impakt Info. All rights reserved. Premium journalism, delivered with excellence.</p>
+                <div class="footer-badges">
+                    <span class="badge">Trusted Source</span>
+                    <span class="badge">Award Winning</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
